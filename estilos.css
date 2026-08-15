@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor {
+    width: 85%;
+    max-width: 1450px;
+
+    margin: 40px auto;
+}
+
+
+/* ENCABEZADO */
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+#mes {
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+
+/* BOTONES */
+
+.encabezado button {
+    width: 55px;
+    height: 50px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: #151515;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+.encabezado button:hover {
+    background-color: #222;
+}
+
+
+/* SEMANA */
+
+.semana {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.semana div {
+    text-align: center;
+
+    padding: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #aaa;
+}
+
+
+.semana .fin-semana {
+    color: #ff3b3b;
+}
+
+
+/* CALENDARIO */
+
+.calendario {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 8px;
+}
+
+
+/* TARJETA */
+
+.dia {
+    min-height: 165px;
+
+    background-color: #151515;
+
+    border-radius: 15px;
+
+    padding: 12px;
+}
+
+
+/* NÚMERO */
+
+.numero {
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+/* SÁBADO Y DOMINGO */
+
+.dia.fin-semana .numero {
+    color: #ff3b3b;
+}
+
+
+/* TURNO */
+
+.turno {
+    margin-top: 10px;
+
+    width: 100%;
+
+    padding: 6px;
+
+    background-color: #147da9;
+
+    border-radius: 4px;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .contenedor {
+        width: 95%;
+    }
+
+    .dia {
+        min-height: 130px;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .dia {
+        min-height: 100px;
+
+        padding: 8px;
+
+        border-radius: 10px;
+    }
+
+    .numero {
+        font-size: 14px;
+    }
+
+    .turno {
+        font-size: 11px;
+    }
+
+    #mes {
+        font-size: 22px;
+    }
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendario</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- ENCABEZADO -->
+        <div class="encabezado">
+
+            <button id="anterior">❮</button>
+
+            <h1 id="mes"></h1>
+
+            <button id="siguiente">❯</button>
+
+        </div>
+
+
+        <!-- DÍAS DE LA SEMANA -->
+        <div class="semana">
+
+            <div>LUNES</div>
+            <div>MARTES</div>
+            <div>MIÉRCOLES</div>
+            <div>JUEVES</div>
+            <div>VIERNES</div>
+            <div class="fin-semana">SÁBADO</div>
+            <div class="fin-semana">DOMINGO</div>
+
+        </div>
+
+
+        <!-- AQUÍ JAVASCRIPT CREARÁ LOS DÍAS -->
+        <div id="calendario" class="calendario"></div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
